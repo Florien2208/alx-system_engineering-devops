@@ -1,0 +1,53 @@
+When you type https://www.google.com in your browser and press Enter, a complex series of events takes place behind the scenes to deliver the Google homepage to your screen. This process involves a number of different technologies, including DNS, TCP/IP, firewalls, HTTPS/SSL, load balancers, web servers, application servers, and databases.
+
+DNS request
+
+The first step is for your browser to resolve the domain name, www.google.com, into an IP address. This is done using the Domain Name System (DNS). DNS is a distributed database that maps domain names to IP addresses. Your browser will typically query a DNS server that is provided by your internet service provider (ISP).
+
+Once your browser has resolved the IP address for www.google.com, it can begin to establish a connection to the Google web server.
+
+TCP/IP
+
+TCP/IP (Transmission Control Protocol/Internet Protocol) is a set of communication protocols that are used to send and receive data over the internet. TCP/IP is used to establish a reliable connection between your browser and the Google web server.
+
+Once the TCP/IP connection is established, your browser can send a request to the Google web server for the homepage.
+
+Firewall
+
+Firewalls are network security devices that monitor and control incoming and outgoing network traffic. Firewalls can be used to block malicious traffic and protect your computer from attack.
+
+Most firewalls will allow traffic to and from the Google web server by default. However, some firewalls may block certain types of traffic, such as HTTPS traffic. If you are unable to access Google, you may need to configure your firewall to allow HTTPS traffic.
+
+HTTPS/SSL
+
+HTTPS (Hypertext Transfer Protocol Secure) is a secure version of the HTTP protocol. HTTPS uses SSL/TLS (Secure Sockets Layer/Transport Layer Security) to encrypt traffic between your browser and the web server. This encryption helps to protect your data from being intercepted by third parties.
+
+Most websites, including Google, now use HTTPS by default. This is because HTTPS provides a more secure way to transfer data over the internet.
+
+Load balancer
+
+A load balancer is a device that distributes traffic across multiple web servers. This helps to improve performance and reliability.
+
+Google uses a network of load balancers to distribute traffic across its web servers. This helps to ensure that Google is available to users all over the world.
+
+Web server
+
+A web server is a computer that hosts websites. When you request a website, your browser sends a request to the web server. The web server then sends the website's files back to your browser.
+
+Google uses a network of web servers to host its websites. This network of web servers is distributed all over the world.
+
+Application server
+
+An application server is a software platform that runs web applications. Web applications are dynamic applications that can generate different content depending on the user's request.
+
+Google uses a variety of application servers to run its web applications. These application servers are typically located on the same web servers that host Google's websites.
+
+Database
+
+A database is a system that stores and organizes data. Databases are used by web applications to store user data, website content, and other types of data.
+
+Google uses a variety of databases to store data for its web applications. These databases are typically located on separate servers from the web servers and application servers.
+
+Conclusion
+
+When you type https://www.google.com in your browser and press Enter, a complex series of events takes place behind the scenes to deliver the Google homepage to your screen. This process involves a number of different technologies, including DNS, TCP/IP, firewalls, HTTPS/SSL, load balancers, web servers, application servers, and databases.

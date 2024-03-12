@@ -1,0 +1,65 @@
+#!/bin/bash
+
+
+
+# function to display information for subdomains
+
+display_subdomain_info () {
+
+  subdomain=$1
+
+  full_domain=$2
+
+
+
+  # use dig to retrieve the record information
+
+  result=$(dig "$subdomain.$full_domain" | grep -A1 'ANSWER SECTION:')
+
+
+
+  # extract the record type and destination using awk
+
+  record_type=$(echo "$result" | awk '{print $4}')
+
+  destination=$(echo "$result" | awk '{print $5}')
+
+
+
+  # output the information
+
+  echo "The subdomain $subdomain is a $record_type record and points to $destination"
+
+}
+
+
+
+# main function
+
+domain=$1
+
+subdomain=$2
+
+
+
+# check if subdomain parameter is provided
+
+if [ -z "$subdomain" ]; then
+
+  # display information for all subdomains if subdomain is not provided
+
+  display_subdomain_info "www" "$domain"
+
+  display_subdomain_info "lb-01" "$domain"
+
+  display_subdomain_info "web-01" "$domain"
+
+  display_subdomain_info "web-02" "$domain"
+
+else
+
+  # display information for the specified subdomain
+
+  display_subdomain_info "$subdomain" "$domain"
+
+fi
